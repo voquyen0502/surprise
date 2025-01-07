@@ -1,0 +1,18 @@
+const CONFIG = {
+    introTitle: 'Hee luu! :>',
+    introDesc: 'Chào mứng Ri đến với minigame của Go',
+    btnIntro: '??? ._.',
+    title: 'Dù hơi bất ngờ... nhưng mà',
+    desc: 'Ri tỉnh ngủ đã được không :>',
+    btnYes: 'Ukiee',
+    btnNo: 'Không, đi ngủ',
+    question:'',
+    btnReply: 'Gửi ._.',
+    reply: 'Hic, không biết :<',
+    mess: 'Biết mà :(( hoi khum sao',
+    messDesc: 'Bấm tiếp tục đi, rồi Go nói cho :)',
+    btnAccept: 'Tiếp tục',
+    mess1st: 'Heee',
+    mess1stDesc: 'Chuyện là...',
+    reply1st: '...',
+}

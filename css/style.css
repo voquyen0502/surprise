@@ -1,0 +1,254 @@
+html, body {
+  background: #000;
+  overflow: hidden;
+  margin: 0;
+  height: 100%;
+}
+
+.content {
+  position: relative;
+  z-index: 3;
+}
+#no{
+  position: absolute;
+  display: inline-block;
+  left: 35%; 
+  top: 45vh;
+  -webkit-transition: all 0.1s ease-out;
+}
+#yes{
+  position: absolute;
+  display: inline-block;
+  left: 70%; 
+  top: 45vh;
+  -webkit-transition: all 0.3s ease-out;
+}
+#bg{
+position: fixed;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+opacity: .8;
+/* height: 100vh; */
+z-index: 0;
+background-repeat: no-repeat;
+background-color: #fae4ed;
+/* background-image: url(../img/cuteCat.jpg); */
+background-size: cover;
+background-position: 50%;
+-webkit-filter: blur(4px);
+}
+
+.swal2-image{
+object-fit: contain;
+}
+
+.swal2-title, .swal2-content{
+color: azure !important;
+}
+.swal2-popup {
+border-radius: 15px !important;
+}
+
+header h2 {
+font-family: 'Pacifico';
+font-size: 80px;
+text-align: center;
+padding: 20px;
+margin-bottom: 10px;
+}
+header h3 {
+  font-family: 'Pacifico';
+  text-align: center;
+  padding: 20px;
+  font-size: 60px;
+}
+header h4 {
+font-family: 'Pacifico';
+text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+header h2 {
+  font-family: 'Pacifico';
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+header h3 {
+  font-family: 'Pacifico';
+  text-align: center;
+  font-size: 50px;
+}
+header h4 {
+  font-family: 'Pacifico';
+  text-align: center;
+  padding: 15px;
+}
+#no{
+  position: absolute;
+  display: inline-block;
+  left: 7%; 
+  top: 45vh;
+  font-size: 14px;
+  padding: 3px;
+  -webkit-transition: all 0.1s ease-out;
+}
+#yes{
+  position: absolute;
+  display: inline-block;
+  left: 58%; 
+  top: 45vh;
+  font-size: 14px;
+  padding: 3px;
+  -webkit-transition: all 0.3s ease-out;
+}
+}
+
+.swal2-backdrop-show{
+background-size: 200px 100px !important;
+}
+
+.image{
+  width: 60%;
+  align-self: center;
+  
+}
+
+.loader button {
+  width: 50%;
+  height: 100px;
+  position: fixed;
+  left: 50%;
+  top: 45%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  background: center no-repeat #fff;
+  z-index: 9999999999999999999999;
+  font-size: 40px;
+  outline: none;
+  box-sizing: border-box;
+  border: none;
+  border-radius: .3em;
+  text-transform: uppercase;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(110, 80, 20, .4), inset 0 -2px 5px 1px rgb(166 74 171), inset 0 -1px 1px 3px rgba(250, 227, 229, 1);
+  background-image: linear-gradient(160deg, #55b1a0, #6e99a3, #58af84, #54a78d, #50b19b);
+  border: 1px solid #a55d67;
+  color: rgb(31 93 82);
+  text-shadow: 0 2px 2px rgba(250, 227, 229, 1);
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.golden-btn:focus,
+.golden-btn:hover {
+  background-size: 150% 150%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23),
+      inset 0 -2px 5px 1px #b17d10,
+      inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
+  border: 1px solid rgba(165, 93, 7, .6);
+  color: rgba(120, 50, 5, .8);
+}
+
+.golden-btn:active {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(110, 80, 20, .4),
+      inset 0 -2px 5px 1px #b17d10,
+      inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
+}
+
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: url(img/back.png) center no-repeat #000;
+}
+
+.song {
+  display: none;
+}
+
+#balloon {
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  opacity: 0.6;
+}
+
+img {
+  width: 100%;
+}
+
+.balloon-border {
+  position: fixed;
+  top: 100%;
+  opacity: 0.5;
+  z-index: 99999999;
+}
+
+.area {
+  text-align: center;
+  font-size: 70px;
+  color: #C4515C;
+  letter-spacing: -7px;
+  font-weight: 700;
+  text-transform: uppercase;
+  animation: spin 2s ease-out infinite;
+  text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+
+#nae {
+  text-transform: capitalize;
+}
+
+#confetti {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes spin {
+  0% {
+      transform: rotateZ(0);
+  }
+
+  25% {
+      transform: rotateZ(10deg);
+  }
+
+  50% {
+      transform: rotateZ(0deg);
+  }
+
+  75% {
+      transform: rotateZ(-10deg);
+  }
+}
+
+.type-wrap {
+  font-size: 25px;
+  color: #abf0ff;
+
+}
+
+.cake {
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+  padding-top: 50px;
+}
+.avatar {
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+}
